@@ -1,7 +1,7 @@
 # What's this for? #
 
 You have clients logging into Azure using Jamf connect Logon and want to get 
-their email address so it can be used the Office and Outlook profiles to allow
+their email address so it can be used for the Office and Outlook profiles to allow
 one click setup of Office/Outlook [like this](https://www.jamf.com/blog/help-users-activate-microsoft-office-365-and-configure-outlook-in-one-click/)
 
 ## What's needed ##
@@ -48,9 +48,9 @@ value is actually available
 
 ## To get it all working ##
 
-Create a policy that runs once after user logon. Incluse the script in it.
-This finds the UPN, sets the EA source value then runs an inventory with the email option
-which updates the users email field and sets the EA to yes.
+Create a policy that runs once after user logon. Include the script in it.
+This finds the UPN in the Jamf Connect Verify plist, creates the file that the EA picks up then runs an inventory with the email option which updates the users email field and sets the EA to yes.
+
 This sets the smart group membership and deploys the profiles...
 
 all done in a few seconds before the user opens Outlook.
