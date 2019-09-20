@@ -5,7 +5,7 @@ their email address so it can be used the Office and Outlook profiles to allow
 one click setup of Office/Outlook [like this](https://www.jamf.com/blog/help-users-activate-microsoft-office-365-and-configure-outlook-in-one-click/)
 
 ## What's needed ##
-The script here also contains the script for the required EA embedded and commented out.
+There are two components required,the script and the EA
 
 The script needs to run as a post user logon item in a policy.
 The EA needs to be created and used to scope the smart group
