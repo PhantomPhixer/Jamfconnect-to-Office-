@@ -29,22 +29,22 @@ This contains the value `LastUser` which contains the account used to sign into 
 Create a script item and copy the contents of the script into it
 
 Create an EA and copy the contents of the EA
-![ EA ](/Jamfconnect-to-Office-/images/EA.png)
+![ EA ](/Jamfconnect-to-Office- /images/EA.png)
 
 Create a smart group and set it to use the EA
 
-![ SG ](/Jamfconnect-to-Office-/images/SG.png)
+![ SG ](/Jamfconnect-to-Office- /images/SG.png)
 
 Create the Outlook and Office profiles. I use [profile creator](https://github.com/ProfileCreator/ProfileCreator)
 Use $EMAIL as the address where required
 
-![ Profile ](/Jamfconnect-to-Office-/images/Profile.png)
+![ Profile ](/Jamfconnect-to-Office- /images/Profile.png)
 
 
 Use the smart group to scope the profiles. This ensures the profiles do not deploy until the $EMAIL
 value is actually available
 
-![ Deployed ](/Jamfconnect-to-Office-/images/deployedprofile.png)
+![ Deployed ](/Jamfconnect-to-Office- /images/deployedprofile.png)
 
 ## To get it all working ##
 
