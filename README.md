@@ -9,16 +9,17 @@ There are two components required,the script and the EA
 
 The script needs to run as a post user logon item in a policy.
 The EA needs to be created and used to scope the smart group
-The smart group scopes the Office profiles
+The smart group scopes the Office profiles for deployment.
 
 and away we go....
 
-## But first... ##
+## first, jamf Connect Logon... ##
 
-**In the Jamf connect Logon profile (JCL) ensure this key is set**
+**In the Jamf connect Logon profile ensure this key is set**
 
 `<key>CreateVerifyPasswords</key>
 			<true/>`
+			
 This makes JCL create the plist 
 `/Library/preferences/com.jamf.connect.verify.plist`
 
@@ -55,3 +56,4 @@ This sets the smart group membership and deploys the profiles...
 
 all done in a few seconds before the user opens Outlook.
 If you really need to be sure throw a cover screen, depnotify or jamf helper, up until the profiles have deployed.
+I have included two simple scripts to do this. ensure the jamf helper script runs before anything else and the profile-deployed runs after anything else.
