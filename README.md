@@ -23,7 +23,7 @@ and away we go....
 This makes JCL create the plist 
 `/Library/preferences/com.jamf.connect.verify.plist`
 
-in the users home
+in the users preferences folder.
 This contains the value `LastUser` which contains the account used to sign into Azure.
 
 ## In Jamf ##
