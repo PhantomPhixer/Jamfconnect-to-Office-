@@ -1,2 +1,2 @@
 # Jamfconnect-to-Office-
-use jamf connect to configure MS Office one click sign in
+This is a simple way to extract a users email address form Jamf Connect and push it to Jamf to allow MS Office one click sign in
