@@ -13,7 +13,7 @@ The smart group scopes the Office profiles for deployment.
 
 and away we go....
 
-## first, jamf Connect Logon... ##
+## Jamf Connect Logon Profile ##
 
 **In the Jamf connect Logon profile ensure this key is set**
 
@@ -26,7 +26,7 @@ This makes JCL create the plist
 in the users home
 This contains the value `LastUser` which contains the account used to sign into Azure.
 
-## In jamf ##
+## In Jamf ##
 Create a script item and copy the contents of the script into it
 
 Create an EA and copy the contents of the EA
