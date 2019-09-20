@@ -27,21 +27,21 @@ in the users home
 This contains the value `LastUser` which contains the account used to sign into Azure.
 
 ## In Jamf ##
-Create a script item and copy the contents of the script into it
+1. Create a script item and copy the contents of the script into it
 
-Create an EA and copy the contents of the EA
+2. Create an EA and copy the contents of the EA
 ![ EA ](https://github.com/PhantomPhixer/Jamfconnect-to-Office-/blob/master/images/EA.png)
 
-Create a smart group and set it to use the EA
+3. Create a smart group and set it to use the EA
 
 ![SG](https://github.com/PhantomPhixer/Jamfconnect-to-Office-/blob/master/images/SG.png)
 
-Create the Outlook and Office profiles. I use [profile creator](https://github.com/ProfileCreator/ProfileCreator)
+4. Create the Outlook and Office profiles. I use [profile creator](https://github.com/ProfileCreator/ProfileCreator)
 Use `$EMAIL` as the address where required and ensure the `Auto Sign in` is set
 
 ![ Profile ](https://github.com/PhantomPhixer/Jamfconnect-to-Office-/blob/master/images/Profile.png)
 
-Upload the profiles into Jamf, personally I export as plist and add them to the `Custom Settings` payload so I can see what's been set.
+5. Upload the profiles into Jamf, personally I export as plist and add them to the `Custom Settings` payload so I can see what's been set.
 
 Use the smart group to scope the profiles. This ensures the profiles do not deploy until the $EMAIL
 value is actually available.
